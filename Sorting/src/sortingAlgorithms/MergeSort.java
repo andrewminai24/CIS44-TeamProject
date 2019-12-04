@@ -1,5 +1,7 @@
 package sortingAlgorithms;
 
+import visualize.SortGraphics;
+
 public class MergeSort {
 	
 	public static void mergeSortFunc(int[] array, int[] arrayS, int start, int end)
@@ -49,20 +51,29 @@ public class MergeSort {
 		
 		return;
 	}
-	public static void mergeSort(int[] array)
+	public static int mergeSort(int[] array, SortGraphics sg, boolean test, int sleep)
 	{
-		int[] arrayS = new int[array.length];
-		mergeSortFunc(array, arrayS, 0, array.length - 1);
-		return;
+	//	int[] arrayS = new int[array.length];
+		mergeSortFunc(array, 0, array.length - 1, sg, test, sleep);
+
+		//mergeSortFunc(array, arrayS, 0, array.length - 1);
+		return 0;
 	}
 
+	private static void mergeSortFunc(int[] array, int i, int j, SortGraphics sg, boolean test, int sleep) {
+		// TODO Auto-generated method stub
+		
+	}
 	public static void main (String args[])
 	{
+		/*
 		int[] array = {1, 2, 4, 1, 5, 2, 7, 1, 1, -1, 8, 1};
 		
 		mergeSort(array);
 		
 		for (int i = 0; i < array.length; i++)
 			System.out.print(array[i] + " ");
+		*/
 	}
+	
 }

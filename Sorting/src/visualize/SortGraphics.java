@@ -146,8 +146,8 @@ public class SortGraphics extends JPanel{
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-//		numElements = 500;
-//		initElements();
+		numElements = 500;
+		initElements(100);
 		
 		int j = 0;
 		for (int i = 0; i < WIDTH; i++) {

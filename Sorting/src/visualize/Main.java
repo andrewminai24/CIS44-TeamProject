@@ -32,7 +32,7 @@ class Main extends JFrame {
 	
 	//select sort
 	private JLabel lblSelectSort = new JLabel("Sort:");
-	String[] sortChoices = {"Selection Sort", "Insertion Sort", "Quick Sort"};
+	String[] sortChoices = {"Selection Sort", "Bubblesort", "Quick Sort","Merge Sort"};
 	JComboBox<String> drpChooseSort = new JComboBox<String>(sortChoices);
 	private JButton btnSort = new JButton("Sort");
 	
